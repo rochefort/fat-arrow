@@ -1,5 +1,4 @@
-FAT_ARROW = ' => '
-ARROW = ' -> '
+CANDIDATES = [' => ', ' -> ', '=>', '->']
 
 module.exports =
 
@@ -10,8 +9,8 @@ module.exports =
     editor = atom.workspace.activePaneItem
     selectedText = editor.getSelectedText()
 
-    if selectedText && selectedText == FAT_ARROW
-      insertText = ARROW
+    if selectedText
+      index = CANDIDATES.indexOf(selectedText) + 1
     else
-      insertText = FAT_ARROW
-    editor.insertText(insertText, {select: true, undo: 'skip'})
+      index = 0
+    editor.insertText(CANDIDATES[index], {select: true, undo: 'skip'})
