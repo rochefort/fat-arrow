@@ -1,0 +1,14 @@
+{
+  "name": "fat-arrow",
+  "main": "./lib/fat-arrow",
+  "version": "0.0.0",
+  "description": "It's only to write '=>' / '->' with a keymap.",
+  "activationEvents": ["fat-arrow:show"],
+  "repository": "https://github.com/rochefort/fat-arrow",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
