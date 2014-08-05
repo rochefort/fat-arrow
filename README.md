@@ -1,6 +1,6 @@
 # fat-arrow package
 
-It's only to write '=>' / '->' with a keymap.
+It's only to write `fat-arrow: => ` and `arrow: -> ` with a keymap.
 
 
 ![A screenshot of your spankin' package](https://raw.githubusercontent.com/rochefort/fat-arrow/master/fat-arrow_exmple.gif)
