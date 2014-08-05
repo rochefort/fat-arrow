@@ -3,7 +3,7 @@
 It's only to write `fat-arrow: => ` and `arrow: -> ` with a keymap.
 
 
-![A screenshot of your spankin' package](https://raw.githubusercontent.com/rochefort/fat-arrow/master/fat-arrow_exmple.gif)
+![A screenshot of your spankin' package](https://raw.githubusercontent.com/rochefort/fat-arrow/master/fat-arrow_example.gif)
 
 ## Usage
 >- `Ctrl-L`
