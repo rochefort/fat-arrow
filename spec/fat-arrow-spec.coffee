@@ -1,5 +1,4 @@
 {WorkspaceView} = require 'atom'
-FatArrow = require '../lib/fat-arrow'
 
 describe "FatArrow", ->
   [activationPromise, editor, editorView] = []
