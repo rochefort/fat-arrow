@@ -8,9 +8,13 @@ module.exports =
   show: ->
     editor = atom.workspace.activePaneItem
     selectedText = editor.getSelectedText()
+    nextIndex = @_nextIndex(selectedText)
+    editor.insertText(CANDIDATES[nextIndex], {select: true, undo: 'skip'})
 
-    if selectedText
-      index = CANDIDATES.indexOf(selectedText) + 1
+  _nextIndex: (selectedText) ->
+    return 0 unless selectedText
+    index = CANDIDATES.indexOf(selectedText)
+    if (index >= CANDIDATES.length - 1)
+      return 0
     else
-      index = 0
-    editor.insertText(CANDIDATES[index], {select: true, undo: 'skip'})
+      return index + 1
