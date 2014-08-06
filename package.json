@@ -1,7 +1,7 @@
 {
   "name": "fat-arrow",
   "main": "./lib/fat-arrow",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "It's only to write '=>' and '->' with a keymap.",
   "activationEvents": [
     "fat-arrow:show"
