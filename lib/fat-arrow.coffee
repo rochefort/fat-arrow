@@ -3,10 +3,11 @@ CANDIDATES = [' => ', ' -> ', '=>', '->']
 module.exports =
 
   activate: (state) ->
-    atom.workspaceView.command 'fat-arrow:show', => @show()
+    atom.commands.add 'atom-workspace', 'fat-arrow:show', => @show()
 
   show: ->
-    editor = atom.workspace.activePaneItem
+    editor = atom.workspace.getActivePaneItem()
+
     selectedText = editor.getSelectedText()
     nextIndex = @_nextIndex(selectedText)
     editor.insertText(CANDIDATES[nextIndex], {select: true, undo: 'skip'})
