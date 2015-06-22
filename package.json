@@ -3,9 +3,11 @@
   "main": "./lib/fat-arrow",
   "version": "0.1.6",
   "description": "It's only to write '=>' and '->' with a keymap.",
-  "activationEvents": [
-    "fat-arrow:show"
-  ],
+  "activationCommands": {
+    "atom-text-editor": [
+      "fat-arrow:show"
+    ]
+  },
   "repository": "https://github.com/rochefort/fat-arrow",
   "license": "MIT",
   "engines": {
