@@ -1,7 +1,7 @@
 {
   "name": "fat-arrow",
   "main": "./lib/fat-arrow",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "It's only to write '=>' and '->' with a keymap.",
   "activationCommands": {
     "atom-text-editor": [
